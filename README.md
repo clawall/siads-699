@@ -45,6 +45,10 @@ python manage.py runserver
 
 ## 4.3. If you want to run the ML Pipeline and create fresh CSV files to train the Models
 make
+
+## 4.4 If you want to run the crawler for a specific account (44196397) and save it as ./output.csv:
+cd crawler
+python read_tweets.py 44196397 ./output.csv
 ```
 
 ## Folder structure
