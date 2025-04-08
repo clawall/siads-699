@@ -24,3 +24,8 @@ all: ./data/03_raw_df.csv
 	$(PYTHON) ./src/clean.py ./data/tweets/ ./data/03_raw_df.csv
 	@echo "Data processing complete. Output saved to ./data/03_raw_df.csv"
 	@echo "You can now run the analysis script to analyze the data."
+
+./data/taq/.stamp: ./data/taq_raw ./src/export_taq_to_parquet.py
+	mkdir -p ./data/taq
+	$(PYTHON) ./src/export_taq_to_parquet.py ./data/taq_raw ./data/taq/
+	touch ./data/taq/.stamp
