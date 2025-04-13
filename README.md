@@ -39,31 +39,25 @@ pip install -r requirements.txt
 ## 4.1. If you want to edit/run the Notebooks:  Starts Jupyter Lab so we can work (it will be opened on a browser)
 jupyter lab
 
-## 4.2. If you want to run the site and request predictions from the Models
-cd capstone_site
-python manage.py runserver
-
-## 4.3. If you want to run the ML Pipeline and create fresh CSV files to train the Models
+## 4.2. If you want to run the ML Pipeline and create fresh CSV files to train the Models
 make
-
-## 4.4 If you want to run the crawler for a specific account (44196397) and save it as ./output.csv:
-cd crawler
-python read_tweets.py 44196397 ./output.csv
 ```
 
 ## Folder structure
 - ./ --> Project settings
 - ./notebooks/ --> Notebooks for the project
-- ./notebooks/assets/ --> General resources, including datasets
 - ./src --> Python files (utilities)
 - ./test --> Unit tests
-- ./capstone_site --> Django site to run the models created on ./notebooks/ and plot prediction results.
-- ./crawler --> webcrawler to collect Twitter data.
 
 ## Machine Learning Pipeline
-A pipeline was constructed to prepare and clean data in preparation for the Models to be trained.  It can be triggered by running the `make` command and will run 2 jobs:
-1. ~~Downloads data from Slack and persists on the database.~~  Copies data from the exported CSV file from Slack to the one expected to process the second script;
-2. Cleans up the file exported from Slack and creates a CSV file with more complete data;
+A pipeline was constructed to prepare and clean data in preparation for the Models to be trained.  It can be triggered by running the `make` command and will run a series of targets:
+1. Read from the list of Twitter handles, scrapes Politiweet and conver them to a list of user IDs;
+2. Scrapers Politiweet for all tweets from the list of user IDs;
+3. Splits the CSV file generated in the previous steps into smaller chunks so they can be persisted in GitHub;
+4. Cleans up and merges the splitted CSV files into a single one to be read and processed in Notebooks;
+
+### Extra target
+There's also an extra step that's not part of the main Pipeline, which converts the really large TAQ files (about 60Gb per file, corresponding to 1 year) into splitted compressed parquet files that can be stored in GitHub while also allowing us to load them directly into Pandas DataFrames.
 
 ## Running Unit Tests  
 

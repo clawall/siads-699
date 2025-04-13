@@ -1,16 +1,33 @@
-import pandas as pd
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+Splits large CSV files into smaller chunks based on a maximum file size.
+This is useful for processing large datasets in manageable sizes.
+"""
 import argparse
 import os
+import pandas as pd
 
 
 DEFAULT_MAX_FILE_SIZE = 45 * 1024 * 1024  # 95 MB
 
-# Helper: estimate bytes per row from sampling
+
 def estimate_bytes_per_row(sample_df):
+    """
+    Estimate the number of bytes per row in a DataFrame by sampling.
+    This is useful for determining how to split large CSV files into smaller chunks.
+    """
     csv_sample = sample_df.to_csv(index=False).encode('utf-8')
     return len(csv_sample) / len(sample_df)
 
-def split_large_files(input_folder, max_file_size):
+
+def split_large_files(input_folder, max_file_size=DEFAULT_MAX_FILE_SIZE):
+    """
+    Splits large CSV files into smaller chunks based on a maximum file size.
+    Args:
+        input_folder (str): Path to the folder containing CSV files.
+        max_file_size (int): Maximum file size in bytes.
+    """
     for filename in os.listdir(input_folder):
         if not filename.endswith('.csv'):
             continue
@@ -42,9 +59,13 @@ def split_large_files(input_folder, max_file_size):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Splits tweet files into smaller chunks.')
-    parser.add_argument('tweet_input_folder', type=str, help='Folder with all the tweets files.')
-    parser.add_argument('--max_file_size', type=str, help='The max size for each CSV file.', default=DEFAULT_MAX_FILE_SIZE)
+    parser = argparse.ArgumentParser(
+        description='Splits tweet files into smaller chunks.')
+    parser.add_argument(
+        'tweet_input_folder',
+        type=str,
+        help='Folder with all the tweets files.')
+
     args = parser.parse_args()
 
-    split_large_files(args.tweet_input_folder, args.max_file_size)
+    split_large_files(args.tweet_input_folder)

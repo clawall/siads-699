@@ -1,8 +1,22 @@
-import pandas as pd
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+Export TAQ CSVs in a folder to parquet files.
+This script reads TAQ CSV files from a specified input folder, processes them
+to calculate average prices per minute, and saves the results as Parquet files
+in a specified output folder. The script handles large files by reading them
+in chunks, and it allows for optional compression of the output files.
+"""
 import argparse
 import os
+import pandas as pd
 
-def export_taq_to_parquet(input_folder, output_folder, chunksize=10**5, compression='snappy'):
+
+def export_taq_to_parquet(
+        input_folder,
+        output_folder,
+        chunksize=10**5,
+        compression='snappy'):
     """
     Export CSV files to Parquet format.
     """
@@ -21,10 +35,11 @@ def export_taq_to_parquet(input_folder, output_folder, chunksize=10**5, compress
             'EX': str,
             'TR_SCOND': str
         }):
-            chunk['timestamp'] = pd.to_datetime(chunk['DATE'] + ' ' + chunk['TIME_M'])
-            
+            chunk['timestamp'] = pd.to_datetime(
+                chunk['DATE'] + ' ' + chunk['TIME_M'])
+
             chunk['PRICE'] = pd.to_numeric(chunk['PRICE'], errors='coerce')
-            
+
             chunk = chunk[['timestamp', 'SYM_ROOT', 'PRICE']]
 
             chunk.set_index('timestamp', inplace=True)
@@ -38,11 +53,11 @@ def export_taq_to_parquet(input_folder, output_folder, chunksize=10**5, compress
             )
 
             results.append(resampled)
-        
+
         final = pd.concat(results)
 
         final = (
-        final
+            final
             .groupby(['timestamp', 'SYM_ROOT'])['PRICE']
             .mean()
             .reset_index()
@@ -62,12 +77,32 @@ def export_taq_to_parquet(input_folder, output_folder, chunksize=10**5, compress
 
         print(f'{filename} completed!')
 
+
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Export TAQ CSVs in a folder to parquet files.')
-    parser.add_argument('input_folder', type=str, help='Folder with all the CSV files.')
-    parser.add_argument('output_folder', type=str, help='Output folder for Parquet files.')
-    parser.add_argument('--chunksize', type=int, default=10**5, help='Number of rows per chunk to read.')
-    parser.add_argument('--compression', type=str, default='snappy', help='Compression algorithm for Parquet files.')
+    parser = argparse.ArgumentParser(
+        description='Export TAQ CSVs in a folder to parquet files.')
+    parser.add_argument(
+        'input_folder',
+        type=str,
+        help='Folder with all the CSV files.')
+    parser.add_argument(
+        'output_folder',
+        type=str,
+        help='Output folder for Parquet files.')
+    parser.add_argument(
+        '--chunksize',
+        type=int,
+        default=10**5,
+        help='Number of rows per chunk to read.')
+    parser.add_argument(
+        '--compression',
+        type=str,
+        default='snappy',
+        help='Compression algorithm for Parquet files.')
     args = parser.parse_args()
 
-    export_taq_to_parquet(args.input_folder, args.output_folder, args.chunksize, args.compression)
+    export_taq_to_parquet(
+        args.input_folder,
+        args.output_folder,
+        args.chunksize,
+        args.compression)
