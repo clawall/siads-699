@@ -8,6 +8,9 @@ This repository contains a subset of available packages on the Coursera reposito
 - César Silveira - clawall
 - Darienne Sautter - dsautter
 
+## Data Citation
+Wharton Research Data Services. "WRDS" wrds.wharton.upenn.edu, accessed 2025-04-07.
+
 ## Pre-requisities
 - Python 3
 - Python virtualenv
