@@ -160,6 +160,8 @@ cython_debug/
 #.idea/
 .env/
 .DS_Store
+.vscode/
 
 # Ignore large files and let make generate them
 data/03_raw_df.csv
+output.csv
