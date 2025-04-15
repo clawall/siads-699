@@ -1,3 +1,4 @@
+arch==7.2.0
 beautifulsoup4==4.13.3
 matplotlib==3.9.4
 numpy==2.0.2
@@ -7,6 +8,7 @@ requests==2.32.3
 scikit-learn==1.6.1
 scipy==1.13.1
 seaborn==0.13.2
+statsmodels==0.14.4
 torch==2.6.0
 torchaudio==2.6.0
 torchvision==0.21.0
