@@ -1,3 +1,4 @@
+altair==5.5.0
 arch==7.2.0
 beautifulsoup4==4.13.3
 matplotlib==3.9.4
