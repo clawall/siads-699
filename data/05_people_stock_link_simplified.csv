@@ -1,0 +1,98 @@
+person name;company name;stock exchange;ticker;date range;description of link;industry
+Buff Mage;Berkshire Hathaway;NYSE;BRK.B;08-1965 - ;Often compared to Warren Buffett, invests in conglomerates;Financials
+Buff Mage;Apple;NASDAQ;AAPL;08-2016 - ;Holds significant tech investments;Technology
+Buff Mage;Bank of America;NYSE;BAC;08-2011 - ;Known to invest heavily in major banks;Financials
+Buff Mage;Coca-Cola;NYSE;KO;08-1988 - ;Long-standing soft drink holdings;Agriculture
+Buff Mage;American Express;NYSE;AXP;08-1963 - ;Significant interest in credit services;Financials
+David Sacks;PayPal;NASDAQ;PYPL;01-1999 - 10-2002;Served in executive role (PayPal Mafia);Cryptocurrency and Fintech
+David Sacks;SoFi Technologies;NASDAQ;SOFI;01-2021 - ;Public commentary and possible investments;Cryptocurrency and Fintech
+David Sacks;Block (Square);NYSE;SQ;11-2020 - ;Known to discuss digital payment platforms;Cryptocurrency and Fintech
+David Sacks;Shopify;NYSE;SHOP;01-2016 - ;Advocates for online commerce solutions;Technology
+David Sacks;Shopify;NYSE;SHOP;01-2016 - ;Advocates for online commerce solutions;Cryptocurrency and Fintech
+David Sacks;Affirm Holdings;NASDAQ;AFRM;08-2020 - ;Involved in discussions on BNPL (Buy Now Pay Later);Cryptocurrency and Fintech
+Donald J. Trump;Digital World Acquisition Corp;NASDAQ;DWAC;10-2021 - ;Linked via Truth Social platform;Technology
+Donald J. Trump;Las Vegas Sands;NYSE;LVS;01-2016 - 12-2020;Historical ties to casino and hospitality industries;Airlines and Travel
+Donald J. Trump;MGM Resorts International;NYSE;MGM;01-2016 - 12-2020;Same as above;Airlines and Travel
+Donald J. Trump;Wynn Resorts;NASDAQ;WYNN;01-2016 - 12-2020;Same as above;Airlines and Travel
+Donald J. Trump;Fox Corporation;NASDAQ;FOX;01-2018 - ;Frequent media coverage & commentary;Technology
+Elizabeth Warren;Wells Fargo;NYSE;WFC;01-2013 - ;Noted critic of large banks as a senator;Financials
+Elizabeth Warren;JPMorgan Chase;NYSE;JPM;01-2013 - ;Public scrutiny and legislative interest;Financials
+Elizabeth Warren;Bank of America;NYSE;BAC;01-2013 - ;Consistent focus on big banks;Financials
+Elizabeth Warren;Citigroup;NYSE;C;01-2013 - ;Critique on consumer banking practices;Financials
+Elizabeth Warren;Goldman Sachs;NYSE;GS;01-2013 - ;Known for challenging investment banks;Financials
+Elon Musk;Tesla;NASDAQ;TSLA;04-2004 - ;CEO and co-founder;Automotive
+Elon Musk;ChargePoint;NYSE;CHPT;01-2021 - ;Publicly discusses charging infrastructure;Automotive
+Elon Musk;ChargePoint;NYSE;CHPT;01-2021 - ;Publicly discusses charging infrastructure;Energy
+Elon Musk;EVgo;NASDAQ;EVGO;01-2021 - ;Advocacy for widespread EV adoption;Automotive
+Elon Musk;EVgo;NASDAQ;EVGO;01-2021 - ;Advocacy for widespread EV adoption;Energy
+Elon Musk;Nio;NYSE;NIO;07-2021 - ;References to competing EV startups;Automotive
+Elon Musk;Rivian;NASDAQ;RIVN;07-2021 - ;Mentions or commentary on emerging EV makers;Automotive
+Joe Biden;Lockheed Martin;NYSE;LMT;01-2021 - ;Administration influences defense contracts;Defense and Aerospace
+Joe Biden;Pfizer;NYSE;PFE;01-2021 - ;Federal support for COVID-19 vaccines;Healthcare and Pharmaceuticals
+Joe Biden;Johnson & Johnson;NYSE;JNJ;01-2021 - ;Same as above, policy ties;Healthcare and Pharmaceuticals
+Joe Biden;Caterpillar;NYSE;CAT;01-2021 - ;Infrastructure spending priorities;Agriculture
+Joe Biden;Caterpillar;NYSE;CAT;01-2021 - ;Infrastructure spending priorities;Automotive
+Joe Biden;ExxonMobil;NYSE;XOM;01-2021 - ;Energy policy and negotiations;Energy
+Jung Musk;Nikola;NASDAQ;NKLA;01-2020 - ;Tied by parody or confusion with EV sector;Automotive
+Jung Musk;Workhorse Group;NASDAQ;WKHS;01-2021 - ;Related to last-mile EV discussions;Automotive
+Jung Musk;Lucid Group;NASDAQ;LCID;01-2021 - ;Another up-and-coming EV maker;Automotive
+Jung Musk;Canoo;NASDAQ;GOEV;01-2021 - ;Focused on new EV technology;Automotive
+Jung Musk;Hyzon Motors;NASDAQ;HYZN;01-2021 - ;Commentary on hydrogen-based mobility;Automotive
+Jung Musk;Hyzon Motors;NASDAQ;HYZN;01-2021 - ;Commentary on hydrogen-based mobility;Energy
+Marc Andreessen;Meta Platforms;NASDAQ;META;01-2012 - ;Early investor/advisor roles;Technology
+Marc Andreessen;Coinbase;NASDAQ;COIN;01-2013 - ;a16z invests heavily in crypto;Cryptocurrency and Fintech
+Marc Andreessen;Roblox;NYSE;RBLX;01-2020 - ;a16z involvement in metaverse platforms;Technology
+Marc Andreessen;Airbnb;NASDAQ;ABNB;04-2011 - ;Early private funding involvement;Airlines and Travel
+Marc Andreessen;Airbnb;NASDAQ;ABNB;04-2011 - ;Early private funding involvement;Technology
+Marc Andreessen;Pinterest;NYSE;PINS;01-2012 - ;Known a16z investment;Technology
+Mr. Tweet;Meta Platforms;NASDAQ;META;01-2022 - ;Often tweets about social media products;Technology
+Mr. Tweet;Snap;NYSE;SNAP;01-2022 - ;Commentary and memes about ephemeral content;Technology
+Mr. Tweet;Pinterest;NYSE;PINS;01-2022 - ;Tweet storms analyzing social platforms;Technology
+Mr. Tweet;Alphabet (Google);NASDAQ;GOOGL;01-2022 - ;Known to discuss big tech's role;Technology
+Mr. Tweet;Match Group;NASDAQ;MTCH;01-2022 - ;Critiques or insights into social apps;Technology
+Nassim Nicholas Taleb;CME Group;NASDAQ;CME;01-2010 - ;Focus on tail risk hedging;Financials
+Nassim Nicholas Taleb;CBOE Global Markets;BATS;CBOE;01-2010 - ;Options market analysis;Financials
+Nassim Nicholas Taleb;Intercontinental Exchange;NYSE;ICE;01-2010 - ;Exchanges & risk commentary;Financials
+Nassim Nicholas Taleb;Bank of America;NYSE;BAC;01-2010 - ;Critic of certain banking practices;Financials
+Nassim Nicholas Taleb;JPMorgan Chase;NYSE;JPM;01-2010 - ;Commentary on financial system fragility;Financials
+Naughtius Maximus;Maximus Inc;NYSE;MMS;01-2015 - ;Shares name, comedic link to govt services;Defense and Aerospace
+Naughtius Maximus;Booz Allen Hamilton;NYSE;BAH;01-2018 - ;Commentary on government tech;Defense and Aerospace
+Naughtius Maximus;Leidos Holdings;NYSE;LDOS;01-2019 - ;Involved in or critiques public sector solutions;Defense and Aerospace
+Naughtius Maximus;Leidos Holdings;NYSE;LDOS;01-2019 - ;Involved in or critiques public sector solutions;Technology
+Naughtius Maximus;Lockheed Martin;NYSE;LMT;01-2019 - ;Government contracting references;Defense and Aerospace
+Naughtius Maximus;Northrop Grumman;NYSE;NOC;01-2019 - ;Same as above;Defense and Aerospace
+Paul Krugman;Amazon;NASDAQ;AMZN;01-2015 - ;Economic commentary on retail & tech;Technology
+Paul Krugman;Walmart;NYSE;WMT;01-2015 - ;Op-eds on wages & big retail;Financials
+Paul Krugman;Alphabet (Google);NASDAQ;GOOG;01-2015 - ;Critiques & analysis of big tech;Technology
+Paul Krugman;Microsoft;NASDAQ;MSFT;01-2015 - ;Commentary on tech monopolies;Technology
+Paul Krugman;Apple;NASDAQ;AAPL;01-2015 - ;Observations on consumer tech markets;Technology
+Richard Branson;Virgin Galactic;NYSE;SPCE;10-2019 - ;Founder and major shareholder;Defense and Aerospace
+Richard Branson;Virgin Galactic;NYSE;SPCE;10-2019 - ;Founder and major shareholder;Airlines and Travel
+Richard Branson;Delta Air Lines;NYSE;DAL;01-2020 - 12-2021;Partnerships & travel industry interest;Airlines and Travel
+Richard Branson;American Airlines;NASDAQ;AAL;01-2020 - 12-2021;Similar airline collaborations;Airlines and Travel
+Richard Branson;Boeing;NYSE;BA;01-2021 - ;Partnerships in space projects;Defense and Aerospace
+Richard Branson;Carnival;NYSE;CCL;01-2021 - ;Discusses broader travel sector;Airlines and Travel
+SBF;Robinhood Markets;NASDAQ;HOOD;05-2021 - ;FTX-related stake disclosures;Cryptocurrency and Fintech
+SBF;Robinhood Markets;NASDAQ;HOOD;05-2021 - ;FTX-related stake disclosures;Financials
+SBF;Coinbase;NASDAQ;COIN;10-2020 - ;Public commentary on crypto exchanges;Cryptocurrency and Fintech
+SBF;Marathon Digital Holdings;NASDAQ;MARA;01-2021 - 12-2022;Investments & crypto mining;Cryptocurrency and Fintech
+SBF;Marathon Digital Holdings;NASDAQ;MARA;01-2021 - 12-2022;Investments & crypto mining;Energy
+SBF;MicroStrategy;NASDAQ;MSTR;01-2021 - 12-2022;Ties to major BTC holders;Cryptocurrency and Fintech
+SBF;Silvergate Capital;NYSE;SI;08-2022 - 03-2023;Banking relationships with FTX;Cryptocurrency and Fintech
+SBF;Silvergate Capital;NYSE;SI;08-2022 - 03-2023;Banking relationships with FTX;Financials
+Sphere-Earthers Rūl;Sphere Entertainment Co;NYSE;SPHR;01-2023 - ;Possibly referencing the new MSG Sphere in Las Vegas;Airlines and Travel
+Sphere-Earthers Rūl;Madison Square Garden Entertainment;NYSE;MSGE;01-2023 - ;Sphere-themed tie-ins;Airlines and Travel
+Sphere-Earthers Rūl;Live Nation Entertainment;NYSE;LYV;01-2023 - ;Potential commentary on large-scale events;Airlines and Travel
+Sphere-Earthers Rūl;The Walt Disney Company;NYSE;DIS;01-2023 - ;Ties to global entertainment;Technology
+Sphere-Earthers Rūl;Warner Bros. Discovery;NASDAQ;WBD;01-2023 - ;Involvement in or commentary on media content;Technology
+Vivek Ramaswamy;Roivant Sciences;NASDAQ;ROIV;05-2014 - ;Founder & former CEO;Healthcare and Pharmaceuticals
+Vivek Ramaswamy;Moderna;NASDAQ;MRNA;01-2020 - 12-2021;Discussions around mRNA vaccines;Healthcare and Pharmaceuticals
+Vivek Ramaswamy;CRISPR Therapeutics;NASDAQ;CRSP;01-2021 - ;Interest in cutting-edge biotech;Healthcare and Pharmaceuticals
+Vivek Ramaswamy;BioNTech;NASDAQ;BNTX;01-2021 - 12-2021;Commentary on vaccine platforms;Healthcare and Pharmaceuticals
+Vivek Ramaswamy;Novavax;NASDAQ;NVAX;06-2021 - 12-2021;Publicly discussing COVID-19 vaccine development;Healthcare and Pharmaceuticals
+jack;Block (Square);NYSE;SQ;10-2015 - ;Co-founder & former CEO;Cryptocurrency and Fintech
+jack;PayPal;NASDAQ;PYPL;01-2021 - ;Frequent references to fintech solutions;Cryptocurrency and Fintech
+jack;Coinbase;NASDAQ;COIN;07-2020 - ;Big advocate of Bitcoin & crypto;Cryptocurrency and Fintech
+jack;Shopify;NYSE;SHOP;01-2022 - ;Partnerships & payment integrations;Technology
+jack;Shopify;NYSE;SHOP;01-2022 - ;Partnerships & payment integrations;Cryptocurrency and Fintech
+jack;Affirm Holdings;NASDAQ;AFRM;01-2022 - ;BNPL expansions & commentary;Cryptocurrency and Fintech
