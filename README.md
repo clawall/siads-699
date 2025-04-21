@@ -40,7 +40,7 @@ pip install -r requirements.txt
 # 4. Running parts of the project:
 
 ## 4.1. If you want to edit/run the Notebooks:  Starts Jupyter Lab so we can work (it will be opened on a browser)
-jupyter lab
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY jupyter lab
 
 ## 4.2. If you want to run the ML Pipeline and create fresh CSV files to train the Models
 make
