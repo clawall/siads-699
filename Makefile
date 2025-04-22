@@ -5,7 +5,7 @@ PYTHON = python3
 
 # Define the targets
 
-all: ./data/03_raw_df.csv
+all: ./data/03_raw_df.csv ./data/VIX1.csv
 
 ./data/02_handles.csv: ./src/convert_handles_to_ids.py
 	$(PYTHON) ./src/convert_handles_to_ids.py ./data/01_influential_people.csv ./data/02_handles.csv
@@ -29,3 +29,10 @@ all: ./data/03_raw_df.csv
 	mkdir -p ./data/taq
 	$(PYTHON) ./src/export_taq_to_parquet.py ./data/taq_raw ./data/taq/
 	touch ./data/taq/.stamp
+
+./data/VIX_raw.csv:
+	curl -XGET https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv >> data/VIX_raw.csv
+
+./data/VIX1.csv:  ./data/VIX_raw.csv ./src/clean_vix.py
+	$(PYTHON) ./src/clean_vix.py ./data/VIX_raw.csv ./data/VIX1.csv
+	@echo "VIX data processing complete. Output saved to ./data/VIX1.csv"
