@@ -35,7 +35,6 @@ source .env/bin/activate
 pip install -r requirements.txt
 
 # 4. Running parts of the project:
-
 ## 4.1. If you want to edit/run the Notebooks:  Starts Jupyter Lab so we can work (it will be opened on a browser)
 OPENAI_API_KEY=YOUR_OPENAI_API_KEY jupyter lab
 
@@ -71,15 +70,13 @@ TAQ dataset was collected from Wharton Research Data Service (WRDS) as stated in
 2. On the menu, select "Get Data" > "TAQ";
 3. Select the option "Millisecond Trade and Quote - "Daily Product". 2003 - present, updated daily.";
 4. Repeat the steps below from year 2010 to 2020:
-4.1. On the "TAQ - Millisecond Consolidated Trades" query builder, select the desired year;
-4.2. On "Autocomplete", ensure that "SYMBOL" is checked and then add all tickers present in the file `./data/04_people_stock_link.csv` (refer to the full list below);
-4.3: Select the following variables for the resultset:  `Date of trade (DATE)`, `Time of Trade or Quote with milliseconds (HHMMSSXXX) (TIME_M)`, ` Security symbol root (SYM_ROOT)`,`Security symbol suffix (SYM_SUFFIX)`, `Volume of trade (SIZE)`, `Price of trade (PRICE)`;
-4.4: Run the query;
-4.5: When you receive the results, download it;
-4.6: Decompress this file in the `./data/taq_raw` folder;
-4.7: After you collect all 10 years of data, run the Makefile target `./data/taq/.stamp` -- it will convert your CSV files into compressed and split parquet files;
-
-----
+    * On the "TAQ - Millisecond Consolidated Trades" query builder, select the desired year;
+    * On "Autocomplete", ensure that "SYMBOL" is checked and then add all tickers present in the file `./data/04_people_stock_link.csv` (refer to the full list below);
+    * Select the following variables for the resultset:  `Date of trade (DATE)`, `Time of Trade or Quote with milliseconds (HHMMSSXXX) (TIME_M)`, ` Security symbol root (SYM_ROOT)`,`Security symbol suffix (SYM_SUFFIX)`, `Volume of trade (SIZE)`, `Price of trade (PRICE)`;
+    * Run the query;
+    * When you receive the results, download it;
+    * Decompress this file in the `./data/taq_raw` folder;
+    * After you collect all 10 years of data, run the Makefile target `./data/taq/.stamp` -- it will convert your CSV files into compressed and split parquet files;
 
 Here's the ticker list used on this project, for reference:
 ```BRK.B AAPL BAC KO PYPL SOFI SQ SHOP AFRM DWAC LVS MGM WYNN FOX WFC JPM C GS TSLA CHPT EVGO NIO RIVN MRNA AMZN WMT MSFT META COIN RBLX ABNB PINS MSTR LMT PFE JNJ XOM AAL LCID WKHS NOC MMS BAH LDOS CAT DELL NVAX BA GME AMC BTC-USD DOGE-USD NOK F SNAP NFLX BYND DAL SPCE PLTR SPOT NKE PEP HD TGT CVX NVDA AMD GOOGL TWTR ADBE DIS GM GE ATVI TTWO ZM TSM```
